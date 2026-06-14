@@ -172,6 +172,11 @@ export async function createInitialHelpMenu(client) {
         .setURL("https://discord.gg/Gv2zmPteJ7")
         .setStyle(ButtonStyle.Link);
 
+    const touchpointButton = new ButtonBuilder()
+        .setLabel("John's ERLC Server")
+        .setURL("https://discord.gg/srpcp")
+        .setStyle(ButtonStyle.Link);
+
     const selectRow = createSelectMenu(
         CATEGORY_SELECT_ID,
         "Select to view the commands",
@@ -225,5 +230,3 @@ export default {
         }, HELP_MENU_TIMEOUT_MS);
     },
 };
-
-
